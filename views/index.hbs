@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    </head>
+    <body>
+        <h1 class="title">{{title}}</h1>
+        <p class="red">Электронный адрес: {{email}}</p>
+        <p>Телефон: {{phone}}</p>
+        <div class="imageContainer">
+            <div class="item">
+                <p>Iphone-1</p>
+                <img src="images/iphone.jpg" alt="" style="border: 5px inset blue; height: 200px">
+            </div>
+            <div>
+                <p>Iphone-2</p>
+                <img src="images/iphone.jpg" alt="" style="border: 5px inset black; height: 200px">
+            </div>
+        </div>
+        <hr />
+        <form action="/" method="post">
+            <label>
+                Add new lod
+                <input name='logText' type="text" placeholder="add new Log here ..."/>
+            </label>
+            <button type="submit">Add</button>
+        </form>
+        <hr />
+        <div class="sectionLogs">
+            <div class="logsTitle">
+                Saved logs
+            </div>
+            <ol class="log_list">
+                {{#each logs}}
+                    <li class="logItem">{{this}}</li>
+                {{/each}}
+            </ol>
+        </div>
+
+    </body>
+</html>

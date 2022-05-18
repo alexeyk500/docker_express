@@ -1,0 +1,38 @@
+.title {
+  color: blue;
+}
+
+.title:hover {
+  color: gold;
+}
+
+.red {
+  color: red;
+}
+
+.imageContainer {
+  display: flex;
+}
+
+.item.item {
+  margin-right: 32px;
+}
+
+.sectionLogs {
+  margin-top: 32px;
+  color: black;
+}
+
+.logsTitle {
+  font-size: 32px;
+  color: blueviolet;
+}
+
+ol {
+  margin-top: 8px;
+}
+
+.logItem {
+  margin-bottom: 4px;
+  font-size: 24px;
+}
